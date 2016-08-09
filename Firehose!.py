@@ -6,12 +6,9 @@
 import urllib.request
 import json
 import pandas as pd
-#import requests
 
-
-# In[6]:
-
-token = '2.00lZ16UGJycrwB0112d5b3f1SOWegE'
+#TOKEN must be replaced by your developer token for SinaWeibo
+token = 'TOKEN'
 page = urllib.request.Request('https://api.weibo.com/2/statuses/public_timeline.json?access_token=' + token)
 response = urllib.request.urlopen(page)
 str_response = response.read().decode('utf-8')
